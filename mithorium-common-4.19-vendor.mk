@@ -305,7 +305,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libadsprpc
 
-ifneq ($(TARGET_HAS_NO_RADIO),true)
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/mithorium-common-4.19/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
     vendor/xiaomi/mithorium-common-4.19/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
@@ -637,4 +636,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CneApp \
     IWlanService
-endif
